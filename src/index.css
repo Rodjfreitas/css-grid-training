@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-color: crimson;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+#Principal{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-areas: 
+    'F A A'
+    'F B C'
+    'F D E'
+    'G G G';
+    gap: 10px;
+    place-content: center;
+    height: 100vh;
+    
+    
+}
+
+.Titulo{
+    grid-area: A;
+    margin: 20px;
+    background-color: aliceblue;
+    border: 3px solid black;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 6px;
+}
+
+div{
+    margin: 20px;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.Card-1{
+    grid-area: B;
+}
+
+.Card-2{
+    grid-area: C;
+}
+
+.Card-3{
+    grid-area: D;
+}
+
+.Card-4{
+    grid-area: E;
+}
+
+.menu{
+    grid-area: F;
+    border-radius: 10px;
+}
+
+footer{
+    grid-area: G;
+}
+
+img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+li{
+    margin: 30px 10px;
+}
