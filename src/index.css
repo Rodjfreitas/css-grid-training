@@ -21,6 +21,7 @@ h1{
     grid-template-columns: max-content;
     grid-template-areas: 
     'F A A'
+    'F H H'
     'F B C'
     'F D E'
     'G G G';
@@ -39,7 +40,7 @@ h1{
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     border-top-right-radius: 35px;
-    border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;    
 }
 
 div{
@@ -68,7 +69,14 @@ div{
 
 .menu{
     grid-area: F;
-    border-radius: 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 6px;
+}
+
+.Card-Alt{
+    grid-area: H;
 }
 
 footer{
@@ -84,3 +92,4 @@ img{
 li{
     margin: 30px 10px;
 }
+
